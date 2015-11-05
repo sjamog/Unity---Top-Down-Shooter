@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
             0.0f,
             Mathf.Clamp(GetComponent<Rigidbody>().position.z, boundary.zMin, boundary.zMax));
 
-        GetComponent<Rigidbody>().rotation = Quaternion.Euler(GetComponent<Rigidbody>().velocity.z * (tilt * 0.5f), 0.0f, GetComponent<Rigidbody>().velocity.x * -tilt);
+        GetComponent<Rigidbody>().rotation = Quaternion.Euler(0.0f, 0.0f, GetComponent<Rigidbody>().velocity.x * -tilt);
 
     }
 
